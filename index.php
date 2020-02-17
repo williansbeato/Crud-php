@@ -3,7 +3,14 @@
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
 
+   
     include_once ("controle.php");
+    include_once("rotas.php");
+
+    if( !empty($_POST['form_submit']) ) {
+        rotas($_POST['acao']);
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -24,22 +31,22 @@
     <body role="document">
     
 
-     <form class="form" method="post" action="viewRoute.php">
+     <form class="form" method="post" action="index.php">
         <input TYPE="hidden" NAME="form_submit" VALUE="OK">
             <br><br>
             <div class='row'>
         		<div class='col-sm-4'>
-                    <button type="submit" name="acao" value="cadastar/0" class="btn btn-primary btn-block">
+                    <button type="submit" name="acao" value="cadastro/" class="btn btn-primary btn-block">
                         <b>Cadastar</b>
                     </button>
                 </div>
                 <div class='col-sm-4'>
-                    <button type="submit" name="acao" value="alterar/1" class="btn btn-success btn-block">
+                    <button type="submit" name="acao" value="alterar/" class="btn btn-success btn-block">
                         <b>Alterar</b>
                     </button>
                 </div>
                 <div class='col-sm-4'>
-                    <button type="submit" name="acao" value="remover/2" class="btn btn-danger btn-block">
+                    <button type="submit" name="acao" value="remover/" class="btn btn-danger btn-block">
                         <b>Remover</b>
                     </button>
                 </div>
