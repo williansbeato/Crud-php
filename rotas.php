@@ -4,12 +4,12 @@
 		$dados = explode("/", $url);
 
 		// CADASTRAR
-		if(strcmp($dados[0], "cadastro") == 0) {
+		if(strcmp($dados[0], "cadastro") == 0){
             echo "<script>location.href='viewCadastro.php'</script>";
 
 		}
 		// ALTERAR
-		else if(strcmp($dados[0], "alterar") == 0) {
+		else if(strcmp($dados[0], "alterar") == 0){
 			echo "<script> alert('ALTERAR') </script>";
 		}
 		// REMOVER

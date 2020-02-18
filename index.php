@@ -40,18 +40,9 @@
                         <b>Cadastar</b>
                     </button>
                 </div>
-                <div class='col-sm-4'>
-                    <button type="submit" name="acao" value="alterar/" class="btn btn-success btn-block">
-                        <b>Alterar</b>
-                    </button>
-                </div>
-                <div class='col-sm-4'>
-                    <button type="submit" name="acao" value="remover/" class="btn btn-danger btn-block">
-                        <b>Remover</b>
-                    </button>
-                </div>
+            
             </div>
-        </form>
+        
 
     <table class='table table-striped'>
     		    <thead>
@@ -68,5 +59,7 @@
                 </tbody>
             </table>
         </div>
+
+        </form>
     </body>
 </html>
